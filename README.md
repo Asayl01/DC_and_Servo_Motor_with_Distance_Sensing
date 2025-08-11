@@ -37,4 +37,43 @@ An ultrasonic sensor measures distance by sending sound waves and timing their e
 
 ![hc-sr04](hc-sr04.png)
 
+
 ## Part One – Without Servo and Ultrasonic
+
+### Wiring
+In this stage, only the **L293D motor driver** and **DC motors** are connected to the Arduino UNO.  
+The wiring is based on two motor groups: **Motor A** and **Motor B**, each controlling the wheels on one side of the robot.
+
+> **Notes:**  
+> - **Motor 1** and **Motor 2** are connected in **parallel** to work together as the left side.  
+> - **Motor 3** and **Motor 4** are connected in **parallel** to work together as the right side.  
+
+| Arduino Pin | L293D Pin | Function |
+|-------------|-----------|----------|
+| **2**       | IN1       | Motor A – Direction 1 |
+| **3**       | IN2       | Motor A – Direction 2 |
+| **4**       | IN3       | Motor B – Direction 1 |
+| **5**       | IN4       | Motor B – Direction 2 |
+| **9**       | ENA       | Enable pin for Motor A & Motor B (speed control if PWM is used) |
+
+![Tinkercad Wiring](Demo1.gif)
+
+
+
+---
+
+###  Turning Logic in Code
+In this project, the turning is done using a **pivot turn**, meaning one side moves while the other side stops.
+
+```cpp
+void turnRight() {
+  digitalWrite(ENA, HIGH);
+  digitalWrite(IN1, HIGH); digitalWrite(IN2, LOW);  // Left side moves forward
+  digitalWrite(IN3, LOW);  digitalWrite(IN4, LOW);  // Right side stops
+}
+
+void turnLeft() {
+  digitalWrite(ENA, HIGH);
+  digitalWrite(IN1, LOW);  digitalWrite(IN2, LOW);  // Left side stops
+  digitalWrite(IN3, HIGH); digitalWrite(IN4, LOW);  // Right side moves forward
+}
