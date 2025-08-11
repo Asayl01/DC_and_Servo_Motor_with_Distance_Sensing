@@ -56,9 +56,7 @@ The wiring is based on two motor groups: **Motor A** and **Motor B**, each contr
 | **5**       | IN4       | Motor B – Direction 2 |
 
  
-![Tinkercad Wiring](Demo1.gif)
-
-
+![wiring](Wiring1.png)
 
 ---
 
@@ -79,3 +77,4 @@ void turnLeft() {
   digitalWrite(IN3, HIGH); digitalWrite(IN4, LOW);  // Right side moves forward
 }
 ```
+![Tinkercad Wiring](Demo1.gif)
