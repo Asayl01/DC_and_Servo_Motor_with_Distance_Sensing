@@ -36,3 +36,5 @@ In Tinkercad, the standalone chip is available instead of the full motor driver 
 An ultrasonic sensor measures distance by sending sound waves and timing their echo, commonly used for obstacle detection.
 
 ![hc-sr04](hc-sr04.png)
+
+## Part One – Without Servo and Ultrasonic
