@@ -76,7 +76,7 @@ The wiring is based on two motor groups: **Motor A** and **Motor B**, each contr
  
 ![wiring](Wiring1.png)
 
----
+
 
 ###  Turning Logic in Code
 In this project, the turning is done using a **pivot turn**, where one side moves while the other side stops.  
@@ -117,7 +117,7 @@ The ultrasonic sensor detects obstacles ahead, and the servo can rotate the sens
 
 ![Tinkercad Wiring](Wiring2.png)
 
----
+
 
 ### Functionality
 1. The ultrasonic sensor continuously measures the distance ahead.  
@@ -126,7 +126,7 @@ The ultrasonic sensor detects obstacles ahead, and the servo can rotate the sens
    - The robot changes its direction to avoid the obstacle.  
 3. The servo can be programmed to scan right and left to find a clear path.
 
----
+
 
 ###  Demo
 ![Demo](Demo2.gif)
