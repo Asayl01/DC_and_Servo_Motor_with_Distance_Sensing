@@ -64,7 +64,8 @@ The wiring is based on two motor groups: **Motor A** and **Motor B**, each contr
 ---
 
 ###  Turning Logic in Code
-In this project, the turning is done using a **pivot turn**, meaning one side moves while the other side stops.
+In this project, the turning is done using a **pivot turn**, where one side moves while the other side stops.  
+This is different from a **point turn**, where one side moves forward and the other side moves backward to rotate in place.
 
 ```cpp
 void turnRight() {
