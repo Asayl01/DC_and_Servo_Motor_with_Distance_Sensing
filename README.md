@@ -80,3 +80,35 @@ void turnLeft() {
 
 # Demo1 
 ![Tinkercad Wiring](Demo1.gif)
+
+## Part Two – With Servo and Ultrasonic
+
+### Wiring
+In this stage, a **servo motor** and an **ultrasonic sensor (HC-SR04)** are added to the existing setup.  
+The ultrasonic sensor detects obstacles ahead, and the servo can rotate the sensor to scan different directions if needed.
+
+| Component               | Arduino Pin | Function |
+|-------------------------|-------------|----------|
+| Servo Motor (signal)    | D10         | Controls the servo rotation |
+| Ultrasonic Sensor – Trig| D12         | Sends the ultrasonic pulse |
+| Ultrasonic Sensor – Echo| D11         | Receives the echo signal |
+| Ultrasonic Sensor – VCC | 5V          | Power supply |
+| Ultrasonic Sensor – GND | GND         | Ground |
+
+> **Note:** The DC motor wiring from Part One remains the same.
+
+![Tinkercad Wiring](Wiring2.png)
+
+---
+
+### Functionality
+1. The ultrasonic sensor continuously measures the distance ahead.  
+2. If an obstacle is detected within **10 cm**:
+   - The motors **stop immediately**.  
+   - The robot changes its direction to avoid the obstacle.  
+3. The servo can be programmed to scan right and left to find a clear path.
+
+---
+
+###  Demo
+![Demo](Demo2.gif)
