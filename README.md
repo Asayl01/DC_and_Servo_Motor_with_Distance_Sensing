@@ -21,4 +21,14 @@ This project was simulated using **Tinkercad** with the following components:
 
 ##  Key Components Explained
 
+### 1. DC Motor
+A DC motor converts direct current into rotational motion, with speed controlled by voltage and direction changed by polarity.
+
+### 2. L293D Motor Driver
+The L293D is a motor driver IC (chip) that controls motor direction and speed.  
+In Tinkercad, the standalone chip is available instead of the full motor driver shield.
+
+### 3. Ultrasonic Sensor (HC-SR04)
+An ultrasonic sensor measures distance by sending sound waves and timing their echo, commonly used for obstacle detection.
+
 
