@@ -45,8 +45,8 @@ In this stage, only the **L293D motor driver** and **DC motors** are connected t
 The wiring is based on two motor groups: **Motor A** and **Motor B**, each controlling the wheels on one side of the robot.
 
 > **Notes:**  
-> - **Motor 1** and **Motor 2** are connected in **parallel** to work together as the left side.  
-> - **Motor 3** and **Motor 4** are connected in **parallel** to work together as the right side.  
+> - **Motor 1** and **Motor 2** are connected in **parallel** to work together as the right side.  
+> - **Motor 3** and **Motor 4** are connected in **parallel** to work together as the left side.  
 
 | Arduino Pin | L293D Pin | Function |
 |-------------|-----------|----------|
@@ -79,3 +79,4 @@ void turnLeft() {
   digitalWrite(IN1, LOW);  digitalWrite(IN2, LOW);  // Left side stops
   digitalWrite(IN3, HIGH); digitalWrite(IN4, LOW);  // Right side moves forward
 }
+```
