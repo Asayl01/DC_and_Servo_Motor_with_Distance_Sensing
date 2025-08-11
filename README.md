@@ -19,3 +19,4 @@ This project was simulated using **Tinkercad** with the following components:
 - Jumper Wires  
 - External Power Supply  
 
+
