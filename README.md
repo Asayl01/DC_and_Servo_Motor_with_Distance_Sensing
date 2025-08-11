@@ -1,5 +1,23 @@
 # DC and Servo Motor with Distance Sensing
 
+
+##  Table of Contents
+- [Project Idea](#project-idea)
+- [Components](#components)
+- [Key Components Explained](#key-components-explained)
+  - [DC Motor](#1-dc-motor)
+  - [L293D Motor Driver](#2-l293d-motor-driver)
+  - [Ultrasonic Sensor (HC-SR04)](#3-ultrasonic-sensor-hc-sr04)
+- [Part One – Without Servo and Ultrasonic](#part-one--without-servo-and-ultrasonic)
+  - [Wiring](#wiring)
+  - [Turning Logic in Code](#turning-logic-in-code)
+  - [Demo1](#demo1)
+- [Part Two – With Servo and Ultrasonic](#part-two--with-servo-and-ultrasonic)
+  - [Wiring](#wiring-1)
+  - [Functionality](#functionality)
+  - [Demo](#demo)
+
+
 ##  Project Idea
 This project simulates a **car-like robot** using an **L293D motor driver shield** to control **4 DC motors** and perform a predefined sequence of movements:  
 1. Move forward for **30 seconds**.  
